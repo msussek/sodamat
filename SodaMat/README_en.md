@@ -73,7 +73,7 @@ Translated with www.DeepL.com/Translator (free version)
   - https://www.amazon.de/gp/product/B01N2GW7PX
 - 1x N-Channel Mosfet for example Infineon IRF740PBF or Infineon IRFP064N or Infineon IRFP1405PBF
   - https://de.aliexpress.com/item/32907153234.html
-- 1x potentiometer 4,7 kOhm 
+- 1x potentiometer 4,7 kOhm with 4 mm shaft diameter
   - https://www.amazon.de/gp/product/B07M5MB2M5
 - 6x diode 1 ampere for example 1N4007
   - https://www.amazon.de/gp/product/B07JGRXJQ5
@@ -97,6 +97,7 @@ Translated with www.DeepL.com/Translator (free version)
 - Solder
 - Hot glue sticks
 - Cable ties
+- Mosque rubber strips
 
 ## Tools
 

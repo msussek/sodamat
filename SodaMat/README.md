@@ -71,7 +71,7 @@ https://youtu.be/NOZfXYWacTg
   - https://www.amazon.de/gp/product/B01N2GW7PX
 - 1x N-Kanal Mosfet zum Beispiel Infineon IRF740PBF oder Infineon IRFP064N oder Infineon IRFP1405PBF
   - https://de.aliexpress.com/item/32907153234.html
-- 1x Potentiometer 4,7 kOhm 
+- 1x Potentiometer 4,7 kOhm mit 4 mm Wellendurchmesser
   - https://www.amazon.de/gp/product/B07M5MB2M5
 - 6x Diode 1 Ampere zum Beispiel 1N4007
   - https://www.amazon.de/gp/product/B07JGRXJQ5
@@ -95,6 +95,7 @@ https://youtu.be/NOZfXYWacTg
 - Lötzinn
 - Heißklebesticks
 - Kabelbinder
+- Mosgummistreifen
 
 ## Werkzeuge
 
