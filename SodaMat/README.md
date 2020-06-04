@@ -274,7 +274,7 @@ Um Leckagen zu vermeiden und um den Überhang sauber gedruckt zu bekommen sind mö
 - An den 2 markierten Schraubenbefestigungspunkten mit dem 3,5 mm Bohrer durch das Gehäuse bohren
 - An den 3 markierten Punkten der Taster mit dem 10 mm Bohrer durch das Gehäuse bohren
 - 3 Taster durch die Löcher in __05_2x_Tastergehäuse_Montagerahmen__ und durch die gebohrten Löcher des Gehäuses führen und mit der Überwurfmutter auf der Innenseite des Gehäuses fest ziehen
-- __05_2x_Tastergehäuse_Montagerahmen__ mit 2 M3 x 10 mm Zylinderschrauben an der Gehäusefront fertig montieren
+- __05_2x_Tastergehäuse_Montagerahmen__ mit 2 M3 x 10 mm Senkkopfschrauben an der Gehäusefront fertig montieren
 - Getränkelabels ausdrucken, passend zuschneiden und in __05_2x_Tastergehäuse_Montagerahmen__ einlegen
 - __04_2x_Tastergehäuse_Frontplatte__ aufclipsen
 - Analog mit dem Tasterbedienfeld an der anderen Gehäuseseite vorgehen

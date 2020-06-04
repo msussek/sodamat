@@ -276,7 +276,7 @@ In order to avoid leakages and to get the overhang printed cleanly, the followin
 - Drill through the housing at the 2 marked screw fixing points with the 3.5 mm drill bit
 - Drill through the housing at the 3 marked points of the probe with the 10 mm drill bit
 - 3 Insert the button through the holes in __05_2x_Tastergehäuse_Montagerahmen__ and through the drilled holes in the housing and tighten with the union nut on the inside of the housing
-- Mount the __05_2x_Tastergehäuse_Montagerahmen__ on the front of the housing with 2 M3 x 10 mm cylinder screws
+- Mount the __05_2x_Tastergehäuse_Montagerahmen__ on the front of the housing with 2 M3 x 10 mm countersunk screws
 - Print out beverage labels, cut them to size and insert them into __05_2x_button housing_mounting frame
 - Clip on __04_2x_Tastergehäuse_Frontplatte__
 - Proceed in the same way with the pushbutton control panel on the other side of the housing
