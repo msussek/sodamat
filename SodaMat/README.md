@@ -6,7 +6,7 @@ SodaMat ist ein selbst gebauter Geträkemischautomat, der sowohl aus 3D gedruckte
 
 Ziel des Projektes ist es, eine Maschine zu bauen, die auf Knopfdruck die gewünschte Menge eines im richtigen Verhältnis fertig gemischten Getränks aus aufgesprudeltem Wasser und Sirup zubereitet.
 
-Wir stellen unser Design des Getränkeautomats unter Open Source und beschreiben hier den Aufbau, so dass ihn einjeder für nicht-kommerzieller Zwecke Lizenzkostenfrei nachbauen kann. 
+Wir stellen unser Design des Getränkeautomats unter Open Source und beschreiben hier den Aufbau, so dass ihn einjeder für nicht-kommerzielle Zwecke Lizenzkostenfrei nachbauen kann. 
 
 ## Videos
 
@@ -15,7 +15,6 @@ __Schaltung__
 In diesem Video zeige ich kurz die Funktionsweise der Schaltung auf einem Breadboard.
 
 https://youtu.be/glGSpBsMzlo
-
 
 __Nach Einbau der Elektrischen Komponenten__
 
@@ -142,7 +141,7 @@ VCC1    | 1      | DC Netzteil 9 Volt oder 12 Volt mindestens 1500 mA
 
 ### Umsetzung
 
-Optional kann die Schaltung zu Testzwecken zunächst auf einem Breadboard aufgebaut werden (siehe Aufbauskizze oben). Zur Vereinfachung kann auch zum Beispiel mit nur zwei Siruppumpen getestet werden, hierzu einfach M3-6, S3-6 und D3-6 weglassen.
+Optional kann die Schaltung zu Testzwecken zunächst auf einem Breadboard aufgebaut werden (siehe Aufbauskizze oben). Zur Vereinfachung kann auch zum Beispiel mit nur zwei Siruppumpen getestet werden, hierzu einfach M3 - M6, S3 - S6 und D3 - D6 weglassen.
 
 Anschließend sind alle Komponenten wie im Schaltplan dargestellt auf eine Lochrasterplatine zu löten. Die Platine wird später unten in der Gehäusemitte zwischen der Gehäusefront und dem Wasserbehälter platziert, bei den Kabellängen also bitte daran denken.
 
@@ -153,13 +152,13 @@ Optional können die freihstehenden Bauteile, die nicht direkt auf der Platine au
 - das Potentiometer R1
 - die Stromquelle / das Netzteil VCC1 
 
-Hierzu ist einfach das 40 Pin IDE-Header auf die Platine anzulöten und sich eine Belegung auszudenken und zu notieren. Ich habe die Pins in Hinblick auf einen strategisch klugen Kalebweg (ohne wilde Überkreuzungen) wie folgt gewählt:
+Hierzu ist das 40 Pin IDE-Header auf die Platine anzulöten und sich eine Belegung auszudenken und zu notieren. Ich habe die Pins in Hinblick auf einen strategisch klugen Kabelweg (ohne wilde Überkreuzungen) wie folgt gewählt:
 
 - Pin 1 - 6 für die Pumpen M1 - M3 auf der linken Gehäuseseite
 - Pin 7 - 12 für die Taster S1 - S3 auf der linken Gehäuseseite
+- Pin 13 - 14 für die Stromquelle / das Netzteil VCC1
+- Pin 15 - 16 für die Wasserpumpe M7 in der Mitte des Gehäuses
 - Pin 26 - 28 für das Potentiometer R1 auf der rechten Gehäuseseite
-- Pin 29 - 30 für die Stromquelle / das Netzteil VCC1
-- Pin 31 - 32 für die Wasserpumpe M7 in der Mitte des Gehäuses
 - Pin 29 - 34 für die Taster S4 - S6 auf der rechten Gehäuseseite
 - Pin 35 - 40 für die Pumpen M4 - M6 auf der rechten Gehäuseseite
 
@@ -169,21 +168,25 @@ Alle Lötverbindungen an Kabel und Kontakte freistehender Bauteile sind mit Schru
 
 Optional können auf Seite der Pumpen JST-Stcker und Buchsen an die Kabel gecrimpt werden, um eine Pumpe zum Beispiel bei einem Defekt schnell tauschen zu können.
 
-Schließlich ist die Platine an ihrem Bestimmungsort (Gehäusemitte zwischen der Gehäusefront und dem Wasserbehälter) platzieren und lose Kabel mit Kabelbindern zu ordnen.
+Schließlich ist die Platine an ihrem Bestimmungsort (Gehäusemitte zwischen der Gehäusefront und dem Wasserbehälter) zu platzieren und lose Kabel mit Kabelbindern zu ordnen.
+
+<img src="img/platine1.jpg" width="50%"/><br/>
+<img src="img/platine2.jpg" width="50%"/><br/>
+<img src="img/platine3.jpg" width="50%"/><br/>
 
 ## 3D Druck
 
 ### Material
 
 Da der Sirup mit einem gedruckten Teil in Kontakt kommt, sollte auf jeden Fall ein zertifiziert lebensmittelechtes Material für den 3D Druck verwendet werden.
-Hierzu habe ich das Filament BASF Ultrafuse EPR InnoPET in Transparent verwendet, es ist lebensmittelecht, passt farblich gut zum transparenten Gehäuse des Automats und erfüllt auch die benötigten Eigenschaften hinsichtlich Stabilität, Dehnungselastizität sowie Dichtigkeit.
+Hierzu habe ich das Filament BASF Ultrafuse EPR InnoPET in Transparent verwendet. Es ist lebensmittelecht, passt farblich gut zum transparenten Gehäuse des Automats und erfüllt auch die benötigten Eigenschaften hinsichtlich Stabilität, Dehnungselastizität sowie Dichtigkeit.
 
 ### Druckteile
 
 Die folgenden Teile sind in der jeweils angegebenen Stückzahl zu drucken:
 
 - [01_Getränkedüse_mit_6_Schlauchdurchführungen](stl/01_Getränkedüse_mit_6_Schlauchdurchführungen.stl)
-  - Die zentrale Düse an der Front des Gehäuses, aus dem das Wasser und Sirup austritt und ins Glas fällt
+  - Die zentrale Düse an der Front des Gehäuses, aus dem das Wasser und der Sirup austritt und ins Glas fällt
 - [02_6x_Pumpenhalterung](stl/02_6x_Pumpenhalterung.stl)
   - Halterung zur Montage der Druckluftpumpen an die Seitenwände der Ikea Samla Kiste
 - [03_6x_Sirupschlauchadapter](stl/03_6x_Sirupschlauchadapter.stl)
@@ -216,12 +219,30 @@ Um Leckagen zu vermeiden und um den Überhang sauber gedruckt zu bekommen sind mö
 - Bauteil so platzieren, dass die runde Mantelfläche des Deckels sowie der innere Schlauchanschlussflansch auf der Druckplatte aufliegt
 - ein hoher Fluss zum Beispiel 110 % (muss vorher getestet werden, dass nicht zu viel Overextrusion entsteht)
 - breite Linien zum Beispiel 0.6 mm bei einer 0.4 mm Nozzle (je breiter die Linien, desto weniger Zwischenräume entstehen)
-- Ideale Temperatur beim BASF Ultrafuse EPR InnoPET war bei mir 220 Grad / 70 Grad Heizbett
+- ideale Temperatur beim BASF Ultrafuse EPR InnoPET war bei mir 220 Grad / 70 Grad Heizbett
 - Möglichst viel Cooling verwenden, um ein Bridging am Überhang hin zu bekommen
 - Keine Stützstrukturen / Support verwenden, andernfalls wird es fast unmöglich, am Ende den Support zerstörungsfrei vom Bauteil zu trennen, da der innere Schlauchanschlussflansch sehr nah am Support wäre
 - Unbedingt die Brücken- / Bridging-Einstellungen aktivieren, damit die ersten beiden Brückenwände mit reduziertem Fluss und höherem Linienabstand gedruckt werden (siehe folgendes Bild)
 
 <img src="img/bridging.png" width="50%"/><br/>
+
+## 2D Druck
+
+### Getränke-Labels
+
+Für die unterschiedlichen Sorten von Sodastream-Sirups habe ich in Adobe Photshop Labels erstellt, die in das Teil 05_2x_Tastergehäuse_Montagerahmen hineinpassen und somit auf einem Farbdrucker ausgedruckt und zur Beschriftung der Taster verwendet werden können. Die folgenden Dateien wurden erstellt:
+
+- [Getränkebeschriftungen](labels/Getränkebeschriftungen.psd)
+  - Enthält eine große Zusammenstellung an Labels von insgesamt 12 Sorten verschiedener Sodastream Sirups
+- [Getränkebeschriftungen_3_Taster](labels/Getränkebeschriftungen_3_Taster.psd)
+  - Enthält 3 Labels untereinander mit Rahmen darum, so dass diese nach einem Ausdruck und Zuschnitt an der Rahmenkante genau in ein Tastergehäuse passen
+
+Wird der Automat mit anderen Sorten von Sirups bestückt, können die entsprechenden Labels aus der Datei __Getränkebeschriftungen__ in __Getränkebeschriftungen_3_Taster__ kopiert werden (gruppierte Ebenen kopieren) und an die entsprechende Tasterposition verschoben werden. Auf diese Weise können die Labels beliebig zusammengestellt werden.
+
+Falls kein Adobe Photoshop vorhanden ist, hier noch einmal dieselben Dateien als JPG:
+
+<img src="labels/Getränkebeschriftungen.jpg" width="90%"/><br/>
+<img src="labels/Getränkebeschriftungen_3_Taster.jpg" width="90%"/><br/>
 
 ## Montage
 
@@ -231,7 +252,7 @@ Um Leckagen zu vermeiden und um den Überhang sauber gedruckt zu bekommen sind mö
 - Am Mittelpunkt auf der Außenseite des Gehäuses das Teil __01_Getränkedüse_mit_6_Schlauchdurchführungen__ anhalten, so dass die die Oberkante bündig mit dem oberen Falz des Gehäuses ist
 - Auf der Innenseite des Gehäuses die Mitte der 6 Schlauchdurchführungs-Löcher markieren
 - Die 4 seitlichen Löcher zur Schraubenbefestigung ebenfalls markieren 
-- Am markierten zentralen Punkt mit dem 24 mm Lochkreisbohrer durch das Gehäuse bohren für zur Durchführung der 6 Schläuche
+- Am markierten zentralen Punkt mit dem 24 mm Lochkreisbohrer durch das Gehäuse bohren zur Durchführung der 6 Schläuche
 - An den markierten 4 seitlichen Punkten mit dem 3,5 mm Bohrer durch das Gehäuse bohren
 - 6 etwa 40 cm lange Stücke vom Silikonschlauch 3 x 5 mm abschneiden
 - Das Schlauchende der 6 Silikonschläuche 3 x 5 mm sowie des Silikonschlauchs 7 x 10 mm muss zunächst durch eines der hinteren und dann durch das entsprechende untere Loch des Teils __01_Getränkedüse_mit_6_Schlauchdurchführungen__ gefädelt werden, hierzu ist eine spitze Schnabelzange oder Pinzette hilfreich
@@ -246,7 +267,7 @@ Um Leckagen zu vermeiden und um den Überhang sauber gedruckt zu bekommen sind mö
 ### Montage der Teile __02_6x_Pumpenhalterung__
 
 - Eine Pumpe in eine __02_6x_Pumpenhalterung__ einlegen, hierzu ein wenig Mosgummi zur Geräuschentkopplung und zum besseren Verklemmen an den Kunststoffteil der Pumpe kleben (Heißkleber)
-- Die __02_6x_Pumpenhalterung__ von innen an einer der Seitenwände der Ikea Samla Kiste anhalten und messen, dass sie vertikal mittig platziert ist, der Abstand von oben sollte so gewählt werden, dass noch der Deckel der Samla Kiste geschlossen werden kann, ohne an die Pumpe anzuschlagen
+- Die __02_6x_Pumpenhalterung__ von innen an einer der Seitenwände der Ikea Samla Kiste anhalten und messen, dass sie vertikal mittig platziert ist, der Abstand von der Oberkante des Gehäuses sollte etwa 9 cm betragen
 - Laschen der Halterung fest an das Gehäuse drücken und Bohrlöcher mit dem Stift markieren
 - Einen festen Abstand der vorderen und hinteren Pumpe zum Mittelpunkt festlegen und messen, hierzu analog zur vorherigen Beschreibung die Bohrlöcher durch Anhalten der Halterung + Pumpe markieren
 - An den markierten Punkten mit dem 3,5 mm Bohrer durch das Gehäuse bohren
@@ -259,7 +280,7 @@ Um Leckagen zu vermeiden und um den Überhang sauber gedruckt zu bekommen sind mö
 
 - 6 etwa 15 cm lange (Länge der Höhe der Sodastream Sirup-Flaschen entsprechend) Stücke vom Silikonschlauch 3 x 5 mm abschneiden
 - Die einen Schlauchenden auf die inneren Schlauchanschlussflansche der Teile __03_6x_Sirupschlauchadapter__ aufstecken
-- Die Verschlusskappen der Sodastream Sirup-Flaschen reinigen und die oberen Fläche / Dächer absägen und mit der Feile oder Schleifpapier entgraten
+- Die Verschlusskappen der Sodastream Sirup-Flaschen reinigen und die oberen Flächen / Dächer absägen und mit der Feile oder Schleifpapier entgraten
 - Reichlich Kunststoffkleber auf die Innenseiten der Flanken der Teile __03_6x_Sirupschlauchadapter__ auftragen und diese auf die abgesägten Verschlusskappen setzen, damit die Teile luftdicht mit den Verschlusskappen verkleben
 - Nach dem Trocknen des Klebers die 6 Schlauchenden des Teils __01_Getränkedüse_mit_6_Schlauchdurchführungen__ an denjenigen Schlauchanschlussflnasch stecken, unter dem sich auch der innere Schlauchanschlussflansch befindet (Sirup-Steigleitung)
 - 6 etwa 20 cm lange Stücke vom Silikonschlauch 3 x 5 mm abschneiden
@@ -270,7 +291,7 @@ Um Leckagen zu vermeiden und um den Überhang sauber gedruckt zu bekommen sind mö
 
 ### Montage der Teile __04_2x_Tastergehäuse_Frontplatte__ und __05_2x_Tastergehäuse_Montagerahmen__
 
-- Die beiden Teile zusammen clipsen und so an die Front des Gehäuses (Ikea Samla Kiste) anhalten, dass die Oberseite bündig mit dem oberen Falz des Gehäuses  und die Innenseite bündig mit dem Teil __01_Getränkedüse_mit_6_Schlauchdurchführungen__ ist
+- Die beiden Teile zusammen clipsen und an die Front des Gehäuses (Ikea Samla Kiste) anhalten, so dass die Oberseite bündig mit dem oberen Falz des Gehäuses und die Innenseite bündig mit dem Teil __01_Getränkedüse_mit_6_Schlauchdurchführungen__ ist
 - Die 2 Löcher zur Schraubenbefestigung sowie die 3 Löcher der Taster auf dem Gehäuse markieren
 - An den 2 markierten Schraubenbefestigungspunkten mit dem 3,5 mm Bohrer durch das Gehäuse bohren
 - An den 3 markierten Punkten der Taster mit dem 10 mm Bohrer durch das Gehäuse bohren
@@ -286,7 +307,7 @@ Um Leckagen zu vermeiden und um den Überhang sauber gedruckt zu bekommen sind mö
 ### Montage der Teile __06_Potentiometergehäuse_Frontplatte__ und __07_Potentiometergehäuse_Montagerahmen__
 
 - Bei der Montage dieser Teile ist analog zur Montage von __04_2x_Tastergehäuse_Frontplatte__ und __05_2x_Tastergehäuse_Montagerahmen__ vorzugehen
-- Die Platzierung sollte rechts neben dem rechten diagonalen Falz der Ikea Samla Kiste erfolgen, Oberkante sollte bündig zu den restlichen Bedienfeldern sein horizontaler Abstand kann frei gewählt werden
+- Die Platzierung sollte rechts neben dem rechten diagonalen Falz der Ikea Samla Kiste erfolgen, die Oberkante sollte bündig zu den restlichen Bedienfeldern sein, der horizontale Abstand kann frei gewählt werden
 
 ### Montage des Teils __09_Ikea_365+_Unterstellrahmen__
 

@@ -144,7 +144,7 @@ VCC1 | 1 | DC power supply 9 Volt or 12 Volt at least 1500 mA
 
 ### Implementation
 
-Optionally, the circuit can first be assembled on a breadboard for test purposes (see assembly sketch above). For simplification, you can also test with only two syrup pumps, for example, simply omit M3-6, S3-6 and D3-6.
+Optionally, the circuit can first be assembled on a breadboard for test purposes (see assembly sketch above). For simplification, you can also test with only two syrup pumps, for example, simply omit M3 - M6, S3 - S6 and D3 - D6.
 
 Then all components have to be soldered on a breadboard as shown in the schematic. The board will later be placed in the middle of the housing between the front of the housing and the water tank, so please remember the cable lengths.
 
@@ -155,13 +155,13 @@ Optionally the free standing components, which are not soldered directly on the 
 - the potentiometer R1
 - the power source / power supply unit VCC1 
 
-To do this, simply solder the 40 pin IDE header onto the board and think up and note down an assignment. I have chosen the pins with regard to a strategically clever caleb path (without wild crossings) as follows:
+To do this, solder the 40 pin IDE header onto the board and think up and note down an assignment. I have chosen the pins with regard to a strategically clever cable path (without wild crossings) as follows:
 
 - Pin 1 - 6 for the pumps M1 - M3 on the left side of the housing
 - Pin 7 - 12 for the buttons S1 - S3 on the left side of the housing
+- Pin 13 - 14 for the power source / power supply VCC1
+- Pin 15 - 16 for the water pump M7 in the middle of the housing
 - Pin 26 - 28 for potentiometer R1 on the right side of the housing
-- Pin 29 - 30 for the power source / power supply VCC1
-- Pin 31 - 32 for the water pump M7 in the middle of the housing
 - Pin 29 - 34 for the buttons S4 - S6 on the right side of the housing
 - Pin 35 - 40 for the pumps M4 - M6 on the right side of the housing
 
@@ -173,12 +173,16 @@ As an option, JST plugs and sockets can be crimped to the cables on the side of 
 
 Finally, place the board at its destination (middle of the housing between the front of the housing and the water tank) and arrange loose cables with cable ties.
 
+<img src="img/platine1.jpg" width="50%"/><br/>
+<img src="img/platine2.jpg" width="50%"/><br/>
+<img src="img/platine3.jpg" width="50%"/><br/>
+
 ## 3D Printing
 
 ### Material
 
 Since the syrup comes into contact with a printed part, a certified food grade material should be used for 3D printing.
-For this purpose I used the filament BASF Ultrafuse EPR InnoPET in Transparent, it is food safe, matches the color of the transparent housing of the vending machine well and also fulfills the required properties regarding stability, stretch elasticity and tightness.
+For this purpose I used the filament BASF Ultrafuse EPR InnoPET in Transparent. It is food safe, matches the color of the transparent housing of the vending machine well and also fulfills the required properties regarding stability, stretch elasticity and tightness.
 
 ### Printing parts
 
@@ -221,9 +225,27 @@ In order to avoid leakages and to get the overhang printed cleanly, the followin
 - The ideal temperature for BASF Ultrafuse EPR InnoPET was 220 degrees / 70 degrees in my heating bed
 - Use as much cooling as possible to get a bridging at the overhang
 - Do not use support structures / supports, otherwise it will be almost impossible to separate the support from the component non-destructively at the end, as the inner hose connection flange would be very close to the support
-- Be sure to activate the bridge / bridging settings so that the first two bridge walls are printed with reduced flow and higher line spacing (see following picture)
+- Be sure to activate the bridging settings so that the first two bridge walls are printed with reduced flow and higher line spacing (see following picture)
 
 <img src="img/bridging.png" width="50%"/><br/>
+
+## 2D Printing
+
+### Drink labels
+
+For the different sorts of sodastream syrups I created labels in Adobe Photshop, which fit into the part 05_2x_Taster housing_mounting frame and can therefore be printed on a color printer and used to label the buttons. The following files were created:
+
+- [Getränkebeschriftungen](labels/Getränkebeschriftungen.psd)
+  - Contains a large collection of labels of a total of 12 varieties of different sodastream syrups
+- [Beverage Labels_3_Button](labels/Getränkebeschriftungen_3_Taster.psd)
+  - Contains 3 labels with a frame around each other, so that they fit exactly into a button housing after printing and cutting at the edge of the frame
+
+If the machine is loaded with other types of syrups, the corresponding labels can be copied from the file __Getränkebeschriftungen__ to __Getränkebeschriftungen_3_Taster__ (copy grouped layers) and moved to the corresponding taster position. In this way, the labels can be arranged as required.
+
+If no Adobe Photoshop is available, here again the same files as JPG:
+
+<img src="labels/Getränkebeschriftungen.jpg" width="90%"/><br/>
+<img src="labels/Getränkebeschriftungen_3_Taster.jpg" width="90%"/><br/>
 
 ## Assembly
 
@@ -248,7 +270,7 @@ In order to avoid leakages and to get the overhang printed cleanly, the followin
 ### Assembly of the parts __02_6x_Pumpenhalterung__
 
 - Insert a pump into a __02_6x_Pumpenhalterung__, glue a little bit of moss-rubber to the plastic part of the pump for noise decoupling and for better clamping (hot glue)
-- Stop the __02_6x_Pumpenhalterung__ from the inside at one of the side walls of the Ikea Samla box and measure that it is placed vertically in the middle, the distance from the top should be chosen so that the lid of the Samla box can still be closed without hitting the pump
+- Stop the __02_6x_Pumpenhalterung__ from the inside at one of the side walls of the Ikea Samla box and measure that it is placed vertically in the middle, the distance from the upper edge of the housing should be about 9 cm
 - Press the tabs of the holder firmly against the housing and mark the drill holes with the pen
 - Determine and measure a fixed distance of the front and rear pump to the centre point, for this purpose mark the boreholes by stopping the bracket + pump analogous to the previous description
 - Drill through the housing at the marked points with the 3.5 mm drill bit
