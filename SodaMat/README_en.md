@@ -10,26 +10,23 @@ We place our design of the vending machine under open source and describe the st
 
 ## Videos
 
-Circuit
+__Circuit__
 
 In this video I show briefly how the circuit works on a breadboard.
 
 https://youtu.be/glGSpBsMzlo
 
-After installing the electrical components
+__After installing the electrical components__
 
 This video shows an intermediate stage in the construction of the beverage vending machine, when the electrical components such as pumps, buttons and the potentiometer have already been completely installed in the housing.
 
 https://youtu.be/BnMTtF5-dhc
 
-First function test with real syrup
+__First function test with real syrup__
 
 This video shows the first functional test of the machine after installation and connection of all components.
 
 https://youtu.be/NOZfXYWacTg
-
-
-Translated with www.DeepL.com/Translator (free version)
 
 ## Features
 
@@ -252,7 +249,7 @@ If no Adobe Photoshop is available, here again the same files as JPG:
 ### Assembly of the part __01_Getränkedüse_mit_6_Schlauchdurchführungen__
 
 - On the front just below the upper rebate, mark the centre of the housing with the pen
-- At the center point on the outside of the housing, stop part __01_Getränkedüse_mit_6_Schlauchdurchführungen__ so that the upper edge is flush with the upper fold of the housing
+- At the center point on the outside of the housing, press on the part __01_Getränkedüse_mit_6_Schlauchdurchführungen__ so that the upper edge is flush with the upper fold of the housing
 - On the inside of the housing, mark the centre of the 6 hose feed-through holes
 - Also mark the 4 lateral holes for screw fixing 
 - Drill through the housing at the marked central point with the 24 mm bolt circle drill for the 6 hoses
@@ -270,9 +267,9 @@ If no Adobe Photoshop is available, here again the same files as JPG:
 ### Assembly of the parts __02_6x_Pumpenhalterung__
 
 - Insert a pump into a __02_6x_Pumpenhalterung__, glue a little bit of moss-rubber to the plastic part of the pump for noise decoupling and for better clamping (hot glue)
-- Stop the __02_6x_Pumpenhalterung__ from the inside at one of the side walls of the Ikea Samla box and measure that it is placed vertically in the middle, the distance from the upper edge of the housing should be about 9 cm
+- press on the __02_6x_Pumpenhalterung__ from the inside at one of the side walls of the Ikea Samla box and measure that it is placed vertically in the middle, the distance from the upper edge of the housing should be about 9 cm
 - Press the tabs of the holder firmly against the housing and mark the drill holes with the pen
-- Determine and measure a fixed distance of the front and rear pump to the centre point, for this purpose mark the boreholes by stopping the bracket + pump analogous to the previous description
+- Determine and measure a fixed distance of the front and rear pump to the centre point, for this purpose mark the boreholes by pressing on the bracket + pump analogous to the previous description
 - Drill through the housing at the marked points with the 3.5 mm drill bit
 - Proceed analogously on the other side of the housing
 - Mount __02_6x_Pumpenhalterung__ with the pumps used and 2 M3 x 10 mm cylinder head screws on the inside of the housing sides
@@ -294,13 +291,13 @@ If no Adobe Photoshop is available, here again the same files as JPG:
 
 ### Assembly of the parts __04_2x_Tastergehäuse_Frontplatte__ and __05_2x_Tastergehäuse_Montagerahmen__
 
-- Clip the two parts together and hold them to the front of the case (Ikea Samla box) so that the top is flush with the top rebate of the case and the inside is flush with part __01_beverage nozzle_with_6_tube feedthroughs
+- Clip the two parts together and hold them to the front of the case (Ikea Samla box) so that the top is flush with the top rebate of the case and the inside is flush with part __01_Getränkedüse_mit_6_Schlauchdurchführungen__
 - Mark the 2 holes for screw fixing and the 3 holes of the buttons on the housing
 - Drill through the housing at the 2 marked screw fixing points with the 3.5 mm drill bit
 - Drill through the housing at the 3 marked points of the probe with the 10 mm drill bit
 - 3 Insert the button through the holes in __05_2x_Tastergehäuse_Montagerahmen__ and through the drilled holes in the housing and tighten with the union nut on the inside of the housing
 - Mount the __05_2x_Tastergehäuse_Montagerahmen__ on the front of the housing with 2 M3 x 10 mm countersunk screws
-- Print out beverage labels, cut them to size and insert them into __05_2x_button housing_mounting frame
+- Print out beverage labels, cut them to size and insert them into __05_2x_Tastergehäuse_Montagerahmen__
 - Clip on __04_2x_Tastergehäuse_Frontplatte__
 - Proceed in the same way with the pushbutton control panel on the other side of the housing
 
