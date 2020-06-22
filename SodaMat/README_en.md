@@ -74,7 +74,7 @@ https://youtu.be/NOZfXYWacTg
   - https://www.amazon.de/gp/product/B07M5MB2M5
 - 6x diode 1 ampere for example 1N4007
   - https://www.amazon.de/gp/product/B07JGRXJQ5
-- 1x breadboard
+- 1x Hole grid board
   - https://www.amazon.de/gp/product/B078HV79XX
 - 16x cheese head screws M3 x 10 mm and nuts (optionally with washers)
 - Optional grub screw M5 for clamping the potentiometer cap
@@ -145,22 +145,24 @@ Optionally, the circuit can first be assembled on a breadboard for test purposes
 
 Then all components have to be soldered on a breadboard as shown in the schematic. The board will later be placed in the middle of the housing between the front of the housing and the water tank, so please remember the cable lengths.
 
-Optionally the free standing components, which are not soldered directly on the board, can be connected to the board via a 40 pin IDE header + ribbon cable pluggable to the board. This concerns 
+Optionally (but recommended) the free standing components, which are not directly soldered on the board, can be connected to the board via a 40 pin IDE header + ribbon cable pluggable to the board. This concerns 
 
 - the pumps M1 - M6 and M7
 - the buttons S1 - S6
 - the potentiometer R1
-- the power source / power supply unit VCC1 
+- the power source / power supply unit VCC1
 
-To do this, solder the 40 pin IDE header onto the board and think up and note down an assignment. I have chosen the pins with regard to a strategically clever cable path (without wild crossings) as follows:
+The use of a 40 pin IDE header is recommended to ensure upward compatibility for future expansions, e.g. the hole grid board with the analog control could be replaced by a designed PCB with microcontroller control and if the pin assignment matches, this is easily done via plug & play.   
 
-- Pin 1 - 6 for the pumps M1 - M3 on the left side of the housing
+For this purpose the 40 pin IDE header has to be soldered on the PCB and the following pin assignment has to be selected:
+
+- Pin 1 - 6 for the pumps M1 - M3 on the left side of the housing (Pin 1, 3, 5: -, Pin 2, 4, 6 +)
 - Pin 7 - 12 for the buttons S1 - S3 on the left side of the housing
-- Pin 13 - 14 for the power source / power supply VCC1
-- Pin 15 - 16 for the water pump M7 in the middle of the housing
-- Pin 26 - 28 for potentiometer R1 on the right side of the housing
+- Pin 13 - 14 for the power source / power supply VCC1 (Pin 13: -, Pin 14: +)
+- Pin 23 - 25 for potentiometer R1 on the right side of the housing (Pin 23: -, Pin 24: +, Pin 25: Output)
+- Pin 27 - 28 for the water pump M7 in the middle of the housing (Pin 27: -, Pin 28: +)
 - Pin 29 - 34 for the buttons S4 - S6 on the right side of the housing
-- Pin 35 - 40 for the pumps M4 - M6 on the right side of the housing
+- Pin 35 - 40 for the pumps M4 - M6 on the right side of the housing (Pin 35, 37, 39: -. Pin 36, 38, 40: +)
 
 Otherwise (if you decide against using an IDE header) the electrical connections must be made using stranded wire.
 

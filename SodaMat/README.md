@@ -145,22 +145,24 @@ Optional kann die Schaltung zu Testzwecken zunächst auf einem Breadboard aufgeba
 
 Anschließend sind alle Komponenten wie im Schaltplan dargestellt auf eine Lochrasterplatine zu löten. Die Platine wird später unten in der Gehäusemitte zwischen der Gehäusefront und dem Wasserbehälter platziert, bei den Kabellängen also bitte daran denken.
 
-Optional können die freihstehenden Bauteile, die nicht direkt auf der Platine aufgelötetet werden, über ein 40 Pin IDE-Header + Flachbandkabel steckbar an die Platine angebunden werden. Dies betrifft 
+Optional (aber empfohlen) können die freihstehenden Bauteile, die nicht direkt auf der Platine aufgelötetet werden, über ein 40 Pin IDE-Header + Flachbandkabel steckbar an die Platine angebunden werden. Dies betrifft 
 
 - die Pumpen M1 - M6 sowie M7
 - die Taster S1 - S6
 - das Potentiometer R1
-- die Stromquelle / das Netzteil VCC1 
+- die Stromquelle / das Netzteil VCC1
 
-Hierzu ist das 40 Pin IDE-Header auf die Platine anzulöten und sich eine Belegung auszudenken und zu notieren. Ich habe die Pins in Hinblick auf einen strategisch klugen Kabelweg (ohne wilde Überkreuzungen) wie folgt gewählt:
+Die Verwendung eines 40 Pin IDE-Headers wird empfohlen, um eine Aufwärtskompatibilität für zukünftige Erweiterungen zu gewährleisten, z. B. könnte man die Lochrasterplatine mit der analogen Reglung gegen ein designtes PCB mit Microcontrollersteuerung austauschen und sofern die Pin-Belegung übereinstimmt ist dies einfach per Plug & Play möglich.   
 
-- Pin 1 - 6 für die Pumpen M1 - M3 auf der linken Gehäuseseite
+Hierzu ist das 40 Pin IDE-Header auf die Platine anzulöten und die folgende Pin-Belegung zu wählen:
+
+- Pin 1 - 6 für die Pumpen M1 - M3 auf der linken Gehäuseseite (Pin 1, 3, 5: -, Pin 2, 4, 6 +)
 - Pin 7 - 12 für die Taster S1 - S3 auf der linken Gehäuseseite
-- Pin 13 - 14 für die Stromquelle / das Netzteil VCC1
-- Pin 15 - 16 für die Wasserpumpe M7 in der Mitte des Gehäuses
-- Pin 26 - 28 für das Potentiometer R1 auf der rechten Gehäuseseite
+- Pin 13 - 14 für die Stromquelle / das Netzteil VCC1 (Pin 13: -, Pin 14: +)
+- Pin 23 - 25 für das Potentiometer R1 auf der rechten Gehäuseseite (Pin 23: -, Pin 24: +, Pin 25: Output)
+- Pin 27 - 28 für die Wasserpumpe M7 in der Mitte des Gehäuses (Pin 27: -, Pin 28: +)
 - Pin 29 - 34 für die Taster S4 - S6 auf der rechten Gehäuseseite
-- Pin 35 - 40 für die Pumpen M4 - M6 auf der rechten Gehäuseseite
+- Pin 35 - 40 für die Pumpen M4 - M6 auf der rechten Gehäuseseite (Pin 35, 37, 39: -. Pin 36, 38, 40: +)
 
 Ansonsten (falls man sich gegen die Verwendung eines IDE Headers entscheidet) sind die elektrischen Verbindungen über Litzenkabel auszuführen.
 
